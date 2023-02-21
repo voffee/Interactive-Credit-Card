@@ -1,0 +1,16 @@
+
+/* Root Var */
+:root {
+    /* --linear-gradient:(active input border): hsl(249, 99%, 64%) to hsl(278, 94%, 30%); */
+}
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color:red;
+}
