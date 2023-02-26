@@ -16,6 +16,33 @@
     <title>Interactive Credit Card</title>
 </head>
 <body>
+    <div class="container">
+        <section id="images">
+            <img src="/img/bg-main-desktop.png" alt="" id="bg-main">
+            <img src="/img/bg-card-front.png" alt="" id="card-front">
+            <img src="/img/bg-card-back.png" alt="" id="card-back">
+        </section>
+        <section id="user-input">
+            <form action="">
+                <label for="chname">CARDHOLDER NAME</label>
+                <input type="text" id="chname" name="chname" value="e.g. Jane Appleseed">
+
+                <label for="cnumber">CARD NUMBER</label>
+                <input type="number" id="cnumber" name="cnumber" value="1e.2">
+
+                <label for="expdate-mm">EXP. DATE (MM</label>
+                <input type="number" id="expdate-mm" name="expdate-mm">
+
+                <label for="expdate-yy">/YY)</label>
+                <input type="number" id="expdate-yy" name="expdate-yy">
+
+                <label for="cvc">CVC</label>
+                <input type="number" id="cvc" name="cvc">
+
+                <input type="button" value="Confirm">
+            </form>
+        </section>
+    </div>
     <!-- Link Script Source -->
     <script src="/js/app.js"></script>
 </body>
