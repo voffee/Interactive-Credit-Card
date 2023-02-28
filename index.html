@@ -16,28 +16,41 @@
     <title>Interactive Credit Card</title>
 </head>
 <body>
+    <img src="/img/bg-main-desktop.png" alt="" id="background-image">
+
     <div class="container">
-        <section id="images">
-            <img src="/img/bg-main-desktop.png" alt="" id="bg-main">
-            <img src="/img/bg-card-front.png" alt="" id="card-front">
-            <img src="/img/bg-card-back.png" alt="" id="card-back">
-        </section>
+        <div class="left-section">
+            <section class="cards">
+                <div class="card-front">
+                    <img src="/img/bg-card-front.png" alt="" id="card-front">
+                    <img src="/img/card-logo.svg" alt="" id="card-logo">
+                    <p class="card-number">0000 0000 0000 0000</p>
+                    <ul>
+                        <li>Jane Appleseed</li>
+                        <li>00/00</li>
+                    </ul>
+                </div>
+                <div class="card-back">
+                    <img src="/img/bg-card-back.png" alt="" id="card-back">
+                    <ul>
+                        <li>000</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
         <section id="user-input">
             <form action="">
-                <label for="chname">CARDHOLDER NAME</label>
+                <label for="chname">Cardholder Name</label>
                 <input type="text" id="chname" name="chname" value="e.g. Jane Appleseed">
 
-                <label for="cnumber">CARD NUMBER</label>
-                <input type="number" id="cnumber" name="cnumber" value="1e.2">
+                <label for="cnumber">Card Number</label>
+                <input type="text" id="cnumber" name="cnumber" value="1234 5678 9999 0000">
 
-                <label for="expdate-mm">EXP. DATE (MM</label>
-                <input type="number" id="expdate-mm" name="expdate-mm">
-
-                <label for="expdate-yy">/YY)</label>
-                <input type="number" id="expdate-yy" name="expdate-yy">
+                <label for="expdate">EXP. DATE (MM/YY)</label>
+                <input type="text" id="expdate" name="expdate" value="MM YY">
 
                 <label for="cvc">CVC</label>
-                <input type="number" id="cvc" name="cvc">
+                <input type="text" id="cvc" name="cvc" value="e.g. 123">
 
                 <input type="button" value="Confirm">
             </form>
