@@ -2,14 +2,14 @@
 /* Root Var */
 :root {
     /* Primary Colors */
-    --active-input-color: linear-gradient(#6448fe, #600594);
-    --error-color: #ff5252;
+    --active-input-color: linear-gradient(hsl(249, 99%, 64%), #hsl(278, 94%, 30%));
+    --error-color: hsl(0, 100%, 66%);
 
     /* Neutral Colors */
-    --white: #ffffff;
-    --light-grayish-violet: #dedddf;
-    --dark-grayish-violet: #8e8593;
-    --very-dark-violet: #21092f;
+    --white: hsl(0, 0%, 100%);
+    --light-grayish-violet: hsl(270, 3%, 87%);
+    --dark-grayish-violet: hsl(279, 6%, 55%);
+    --very-dark-violet: hsl(278, 68%, 11%);
 }
 
 /* Reset */
@@ -23,9 +23,30 @@ body {
     font-size: 18px;
     font-family: 'Space Grotesk', sans-serif;
     /* Add bg image in CSS, here, inside body */
+    min-height: 100vh;
 }
 
 .container {
     display: flex;
     flex-direction: row;
+    align-items: center;
+}
+
+#user-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    /* width: 1rem; */
+}
+
+form label {
+    font-style: italic;
 }
