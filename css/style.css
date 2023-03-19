@@ -133,8 +133,12 @@ input {
     width: 50vw;
 }
 
+.card-front {
+
+}
+
 .card-front-img {
-    position: absolute;
+    position: relative;
     top: 100px;
     left: 200px;
 }
@@ -145,13 +149,24 @@ input {
 }
 
 .card-logo {
-    position: absolute;
-    top: 140px;
-    left: 230px;
+    position: relative;
+    /* top: 140px;
+    left: 230px; */
+    top: -60px;
+    left: -210px;
 }
 
 .card-back-img {
-    position: absolute;
-    top: 380px;
+    position: relative;
+    top: 80px;
     left: 260px;
+}
+
+.card-cvc {
+    position: relative;
+    top: -70px;
+    left: 600px;
+    font-size: 18px;
+    /* color: var(--white); */
+    color: red;
 }
