@@ -23,6 +23,9 @@ body {
     font-size: 18px;
     font-family: 'Space Grotesk', sans-serif;
     /* Add bg image in CSS, here, inside body */
+    background-image: url(/img/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
     min-height: 100vh;
 }
 
@@ -32,21 +35,100 @@ body {
     align-items: center;
 }
 
-#user-input {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+.left-section {
+    width: 50vw;
 }
 
-form {
+.right-section {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    gap: 1rem;
-    /* width: 1rem; */
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(9, 30px);
+    width: 50vw;
+    row-gap: 10px;
+    column-gap: 10px;
+    align-items: center;
 }
 
-form label {
-    font-style: italic;
+p {
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+input {
+    font-family: 'Space Grotesk', sans-serif;
+    color: var(--light-grayish-violet);
+    border-style: solid;
+    border-color: var(--light-grayish-violet);
+    border-radius: 5px;
+    height: 35px;
+}
+
+#chname-label {
+    grid-area: 1 / 2 / 2 / 4;
+    /* row-start column-start row-end column-end */
+    align-self: end;
+}
+
+#chname {
+    grid-area: 2 / 2 / 3 / 6;
+    /* row-start column-start row-end column-end */
+    height: 40px;
+    text-indent: 1em;
+}
+
+#cnumber-label {
+    grid-area: 3 / 2 / 4 / 4;
+    /* row-start column-start row-end column-end */
+    align-self: end;
+}
+
+#cnumber {
+    grid-area: 4 / 2 / 5 / 6;
+    /* row-start column-start row-end column-end */
+    height: 40px;
+    text-indent: 1em;
+}
+
+#expdate-label {
+    grid-area: 5 / 2 / 6 / 4;
+    /* row-start column-start row-end column-end */
+    align-self: end;
+}
+#expdate-mm {
+    grid-area: 6 / 2 / 7 / 3;
+    /* row-start column-start row-end column-end */
+    height: 40px;
+    width: 100%;
+    text-indent: 1em;
+}
+#expdate-yy {
+    grid-area: 6 / 3 / 7 / 4;
+    /* row-start column-start row-end column-end */
+    height: 40px;
+    width: 100%;
+    text-indent: 1em;
+}
+
+#cvc-label {
+    grid-area: 5 / 4 / 6 / 5;
+    /* row-start column-start row-end column-end */
+    align-self: end;
+}
+
+#cvc {
+    grid-area: 6 / 4 / 7 / 6;
+    /* row-start column-start row-end column-end */
+    height: 40px;
+    text-indent: 1em;
+}
+
+#button {
+    grid-area: 7 / 2 / 8 / 6;
+    /* row-start column-start row-end column-end */
+    color: var(--white);
+    background-color: var(--very-dark-violet);
+    height: 40px;
+    border-radius: 10px;
+    align-self: center;
+    margin-top: 50px;
 }
