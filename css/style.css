@@ -133,19 +133,45 @@ input {
     width: 50vw;
 }
 
-.card-front {
+.card-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
 
+.card-display {
+    color: var(--white);
+    z-index: 1;
+}
+
+.card-number {
+    position: relative;
+    top: 0px;
+    right: -120px;
+    font-size: 28px;
+    letter-spacing: 0.1rem;
+}
+
+.card-name {
+    position: relative;
+    top: 45px;
+    right: 220px;
+    font-size: 12px;
+}
+
+.card-expiry {
+    position: relative;
+    top: 45px;
+    right: 20px;
+    font-size: 12px;
 }
 
 .card-front-img {
     position: relative;
     top: 100px;
     left: 200px;
-}
-
-.card-front p {
-    font-size: 18px;
-    color: var(--white);
+    z-index: 0;
 }
 
 .card-logo {
@@ -160,13 +186,12 @@ input {
     position: relative;
     top: 80px;
     left: 260px;
+    z-index: 0;
 }
 
 .card-cvc {
     position: relative;
-    top: -70px;
+    top: -60px;
     left: 600px;
-    font-size: 18px;
-    /* color: var(--white); */
-    color: red;
+    font-size: 12px;
 }
