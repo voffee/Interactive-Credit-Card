@@ -10,6 +10,9 @@
     --light-grayish-violet: hsl(270, 3%, 87%);
     --dark-grayish-violet: hsl(279, 6%, 55%);
     --very-dark-violet: hsl(278, 68%, 11%);
+
+    /* Mobile Width */
+    --mobile-width: 375px;
 }
 
 /* Reset */
@@ -182,6 +185,8 @@ input {
     left: -210px;
 }
 
+/* Back of Credit Card */
+
 .card-back-img {
     position: relative;
     top: 80px;
@@ -194,4 +199,103 @@ input {
     top: -60px;
     left: 600px;
     font-size: 12px;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 820px) {
+    body {
+        /* Add bg image in CSS, here, inside body */
+        background-image: url(/img/bg-main-mobile.png);
+        background-repeat: no-repeat;
+        background-position: 0% 0%;
+        min-height: 100vh;
+        /* margin: auto; */
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-details p {
+        color: red;
+        /* TEMPORARY */
+    }
+
+    .card-number {
+        position: relative;
+        top: 0px;
+        right: 0px;
+        font-size: 28px;
+        letter-spacing: 0.1rem;
+    }
+    
+    .card-name {
+        position: relative;
+        top: 0px;
+        right: 0px;
+        font-size: 12px;
+    }
+    
+    .card-expiry {
+        position: relative;
+        top: 0px;
+        right: 0px;
+        font-size: 12px;
+    }
+    
+    .card-front-img {
+        position: absolute;
+        width: 75%;
+        height: auto;
+        top: 138px;
+        left: 20px;
+        z-index: 1;
+        /* display: none; */
+    }
+    
+    .card-logo {
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+
+    /* Back of Credit Card */
+    .card-back-img {
+        position: absolute;
+        width: 75%;
+        height: auto;
+        top: 50px;
+        left: 75px;
+        z-index: 0;
+        /* display: none; */
+    }
+    
+    .card-cvc {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        font-size: 12px;
+    }
+
+    .right-section {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(9, 30px);
+        width: 50vw;
+        row-gap: 10px;
+        column-gap: 10px;
+        align-items: center;
+    }
+
+    .left-section {
+        /* width: 50vw; */
+    }
 }
