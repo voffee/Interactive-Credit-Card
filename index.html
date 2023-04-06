@@ -36,20 +36,30 @@
         </div>
         <section class="right-section">
             <form action="">
-                <p id="chname-label">Cardholder Name</p>
-                <input type="text" id="chname" name="chname" value="e.g. Jane Appleseed">
-
-                <p id="cnumber-label">Card Number</p>
-                <input type="text" id="cnumber" name="cnumber" value="e.g. 1234 5678 9999 0000">
-
-                <div class="triple-box-wrap">
-                    <p id="expdate-label">EXP. DATE (MM/YY)</p>
-                    <input type="text" id="expdate-mm" name="expdate" value="MM">
-
-                    <input type="text" id="expdate-yy" name="expdate" value="YY">
-
-                    <p id="cvc-label">CVC</p>
-                    <input type="text" id="cvc" name="cvc" value="e.g. 123">
+                <div class="grid-1">
+                    <p id="chname-label">Cardholder Name</p>
+                    <input type="text" id="chname" name="chname" value="e.g. Jane Appleseed">
+                </div>
+                <div class="grid-2">
+                    <p id="cnumber-label">Card Number</p>
+                    <input type="text" id="cnumber" name="cnumber" value="e.g. 1234 5678 9999 0000">
+                </div>
+                <div class="card-information">
+                    <div class="card-date">
+                        <p id="expdate-label">EXP. DATE (MM/YY)</p>
+                        <div class="double-input">
+                            <div>
+                                <input type="text" id="expdate-mm" name="expdate" value="MM">
+                            </div>
+                            <div>
+                                <input type="text" id="expdate-yy" name="expdate" value="YY">
+                            </div>
+                        </div>
+                        <div class="grid-3">
+                            <p id="cvc-label">CVC</p>
+                            <input type="text" id="cvc" name="cvc" value="e.g. 123">
+                        </div>
+                    </div>
                 </div>
                 <input type="button" id="button" value="Confirm">
             </form>  

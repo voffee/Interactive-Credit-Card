@@ -40,10 +40,27 @@ body {
 
 .right-section {
     display: flex;
-    flex-direction: column;
-    width: 50vw;
-    gap: 10px;
     align-items: center;
+    justify-content: center;
+}
+
+.right-section form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.grid-1 {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2 span;
+}
+
+.grid-2 {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2 span;
 }
 
 p {
@@ -59,24 +76,9 @@ input {
     border-radius: 5px;
 }
 
-.triple-box-wrap {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 10px;
-}
-
-#chname-label {
-    
-}
-
 #chname {
     height: 40px;
     text-indent: 1em;
-}
-
-#cnumber-label {
-
 }
 
 #cnumber {
@@ -84,37 +86,19 @@ input {
     text-indent: 1em;
 }
 
-#expdate-label {
-    grid-area: 1 / 1 / 2 / 2;
-    /* row-start column-start row-end column-end */
-    align-self:self-end;
-}
 #expdate-mm {
-    grid-area: 2 / 1 / 3 / 2;
-    /* row-start column-start row-end column-end */
     height: 40px;
-    width: 50%;
+    /* width: 50%; */
     text-indent: 1em;
 }
 #expdate-yy {
-    /* grid-area: 2 / 2 / 3 / 3; */
-    grid-row-start: 2;
-    grid-row-end: 3;
     /* row-start column-start row-end column-end */
     height: 40px;
     /* width: 50%; */
     text-indent: 1em;
 }
 
-#cvc-label {
-    grid-area: 1 / 3 / 2 / 4;
-    /* row-start column-start row-end column-end */
-    align-self:self-end;
-}
-
 #cvc {
-    grid-area: 2 / 3 / 3 / 4;
-    /* row-start column-start row-end column-end */
     height: 40px;
     text-indent: 1em;
 }
@@ -129,7 +113,7 @@ input {
 }
 
 .left-section {
-    width: 50vw;
+    /* width: 50vw; */
 }
 
 .card-details {
